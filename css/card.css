@@ -1,0 +1,162 @@
+
+/* ------------------------------------------------------------ *\
+	General
+\* ------------------------------------------------------------ */
+
+.card {
+  background-color: var(--cardbg);
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.13);
+  transition: 0.3s;
+
+  -webkit-border-radius: var(--cardradius);
+  -moz-border-radius: var(--cardradius);
+  border-radius: var(--cardradius);
+}
+
+.card .card-header{
+  height: 4rem;
+  line-height: 4rem;
+  background: var(--primary);
+  color: var(--fontcoloralt);
+}
+
+/* Header */
+.card .lt-header{
+  color: var(--secondary);
+  background:hsl(0, 0%, 95%);
+  background:linear-gradient(to top right, hsl(0, 0%, 96%), hsl(0, 0%, 88%));
+  border-bottom: solid 1px hsl(0, 0%, 85%);
+  overflow: hidden;
+  position: relative;
+  height: 2.5rem;
+  line-height: 2.85;
+}
+.card .lt-header > [class*="col-"]{
+  color: var(--primary);
+  font-size: 1.125rem;
+  font-weight: 500;
+  height: 2.5rem;
+  line-height: 2.85rem;
+  z-index: 5;
+}
+.card .lt-header.bar:after{
+  content: '\f012';
+  position: absolute;
+  right:40px;
+  top:10px;
+  color:hsl(0, 0%, 94%);
+  font-size: 13rem;
+  transform: rotate(30deg);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  text-align: right;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card .lt-header.circle:after{
+  content: '\f2a1';
+  position: absolute;
+  right:40px;
+  top:10px;
+  color:hsl(0, 0%, 94%);
+  font-size: 10rem;
+  transform: rotate(30deg);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  text-align: right;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card .lt-header.code:after{
+  content: '\f02a';
+  position: absolute;
+  right:40px;
+  top:20px;
+  color:hsl(0, 0%, 92%);
+  font-size: 16rem;
+  transform: rotate(20deg);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  text-align: right;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lt-header h2, .lt-header h3, .lt-header h4, .lt-header h5{
+  z-index: 30;
+  position: relative;
+}
+
+.card .lt-header{
+  -webkit-border-radius: var(--cardradius) var(--cardradius) 0 0;
+  -moz-border-radius: var(--cardradius) var(--cardradius) 0 0;
+  border-radius: var(--cardradius) var(--cardradius) 0 0;
+}
+
+/* Footer */
+.card .lt-footer{
+  background:hsl(0, 0%, 94%);
+}
+
+.card .lt-footer{
+  -webkit-border-radius: 0 0 var(--cardradius) var(--cardradius);
+  -moz-border-radius: 0 0 var(--cardradius) var(--cardradius);
+  border-radius: 0 0 var(--cardradius) var(--cardradius);
+}
+
+.card select.lrgtxt{
+  border: 0;
+  color: var(--primary);
+  background: transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-bottom: 2px solid var(--primary);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.card div.lrgtxt{
+  color: var(--primary);
+  background: transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  border-bottom: 2px solid var(--primary);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+}
+
+.card select.lrgtxt.align-right{
+  text-align-last: right;
+  text-align: right;
+  -ms-text-align-last: right;
+  -moz-text-align-last: right;
+  padding-right: 8px;
+}
+
+/* .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
