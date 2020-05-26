@@ -131,6 +131,12 @@ small, .text_small {font-size: 0.83333rem;}
 
 h1, h2, h3, h4, h5{display: inline-block; }
 
+.wt100{font-weight:100;}
+.wt300{font-weight:300;}
+.wt500{font-weight:500;}
+.wt700{font-weight:700;}
+.wt900{font-weight:900;}
+
 .clrpri{color:var(--primary);}
 .clrsec{color:var(--secondary);}
 .clrwht{color:var(--white);}
