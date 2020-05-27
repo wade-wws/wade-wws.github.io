@@ -73,6 +73,7 @@ body, html{
   line-height: 1.167;
   font-family: 'Lato', sans-serif;
   -webkit-backface-visibility: hidden;
+  min-height: calc(100vh - var(--headHei));
 }
 
 body{
@@ -139,6 +140,7 @@ h1, h2, h3, h4, h5{display: inline-block; }
 
 .clrpri{color:var(--primary);}
 .clrsec{color:var(--secondary);}
+.clrinv{color:var(--inverse);}
 .clrwht{color:var(--white);}
 .clrlt{color:var(--light);}
 .clrmd{color:var(--medium);}

@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/fontawesome.all.min.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <script src="js/owl.carousel.min.js"></script>
+  
   <script src="js/header.js" defer></script>
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="shortcut icon" href="images/me_Oct2019_SqSmGry.jpg?v=1" type="image/jpg" sizes="16x16 32x32 64x64">
@@ -19,6 +24,21 @@
   <title>Wws</title>
   <meta name="description" content="Wade Smith - Buisness solutions developer" />
   <meta name="keywords" content="mobile, application, iot, design, developer, software" />
+
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          items: 1,
+          loop:true,
+          margin:0,
+          nav:false,
+          autoplay:false,
+          autoplayHoverPause:true,
+          smartSpeed:800,
+          dots:true
+      })
+    });
+  </script>
 </head>
 <body>
   
@@ -42,29 +62,18 @@
             </div>
           </div>
           <ul class="nav">
-            <li class="navitem active">
+            <li class="navitem">
               <a title="home" href="index.html">
                 <i class="fas icon fa-home"></i>
                 <label for="">Home</label>
               </a>
             </li>
-            <li class="navitem">
+            <li class="navitem active">
               <a title="projects" href="projects.html">
                 <i class="fas icon fa-home"></i>
                 <label for="">Projects</label>
               </a>
             </li>
-            <!-- <li class="navitem dropdown">
-              <a class="dropdown-toggle">
-                <i class="fas icon fa-cog"></i>
-                <label for="">Admin</label>
-                <i class="fas fa-angle-down"></i>
-              </a>
-              <ul class="dropdown-nav">
-                <li><a title="accounts" href="/admin/accounts">Accounts</a></li>
-                <li><a title="equipment" href="/admin/equipment">Equipment</a></li>
-              </ul>
-            </li> -->
           </ul>
           <div class="nav_collapse evt-expandNav d-md-none">
             <i class="fas fa-2x fa-chevron-right"></i>
@@ -82,16 +91,12 @@
     <div class="row">
       <div class="col-12 hero-section">
         <div class="hero-Text container">
-          <div class="profile-img circle"></div>
-          <div class="profile-text">
-            <h1>
-              Hi, I'm<br>
-              Wade Smith
-            </h1><br>
-            <h3>Business Solutions Developer</h3>
+          <div class="profile-text no-profile">
+            <h1>Projects</h1><br>
+            <h3>History of Development</h3>
           </div>
         </div>
-        <div class="hero-Image laptop"></div>
+        <div class="hero-Image projects"></div>
       </div>
     </div>
   </div>
@@ -100,72 +105,94 @@
   <!-- services -->
   <div class="container notes-section">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-tag"></i><br>
-        <h3>Branding</h3><br>
+      <div class="col-12 col-md-7 align-center">
+        <h1><b class="clrpri">Projects that I have developed.</b></h1>
+        <br><br>
         <p>
-          Creating marketing sites to build-out and sell your brand, 
-          integration of modern tools, like chat or streaming on-site.
+          Some primary examples of projects I have worked on and company that 
+          I have worked for. My works usually have a blend of combining creative
+          systems driven with data.<br>
+          <br>
         </p>
       </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-cogs"></i><br>
-        <h3>Infrastruction</h3><br>
-        <p>
-          Building mobile and web apps to manage customers, devices, and systems
-          with real-time cloud driven systems to build your business on.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-sitemap"></i><br>
-        <h3>Process</h3><br>
-        <p>
-          Integration of modern systems into your existing or new workflows,
-          with years of experience working with people and businesses.
-        </p>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-magic"></i><br>
-        <h3>Automation</h3><br>
-        <p>
-          Converting your business logic into code to automate repeative task,
-          grow your business 10x by getting more out the door each day.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="far fa-eye"></i><br>
-        <h3>Transparency</h3><br>
-        <p>
-          Helping give your customers a view into your company, cuts your customer support 
-          dramatically by letting them track their own orders.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-pencil-ruler"></i><br>
-        <h3>Visuals</h3><br>
-        <p>
-          Taking the guess work out of what they are getting, using modern graphic systems
-          to present your product online in full detail.
-        </p>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
       <div class="col-12">
         <hr>
         <br><br>
       </div>
-      <div class="col-12 col-md-7 align-center">
-        <h1><b class="clrpri">How can I help?</b></h1>
-        <br><br>
-        <p>
-          Working with people to plan out a strategy to deliver the tools and
-          systems needed to keep up with these modern times, and driving business forward.<br>
-          <br>
-        </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row zeotec">
+      <div class="col-12 owl-carousel screen-shot owl-theme">
+        <div class="item blank">
+          <div class="row justify-content-center">
+            <div class="col-10 align-center">
+              <br><br>
+              <h1 class="clrpri bold">Zeotec</h1>
+              <br><br>
+              <h4>
+                Lab testing for Chemical and Non-Chemical services
+              </h4>
+              <br>
+            </div>
+            <div class="col-10 col-md-4">
+              <br><br>
+              <h3 class="clrpri bold">Key features:</h3>
+              <hr>
+              <ul class="h5">
+                <li>Mobile access for service technitions</li>
+                <li>Asset management and contracts</li>
+                <li>Real-time lab results, fast reaction times</li>
+                <li>Integrated emailing for client approvals</li>
+                <li>Map overview to quickly identify issues</li>
+                <li>Print, Download, and Email lab reports</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Search / Bookmarked</h3>
+            <hr>
+            <ul class="h5">
+              <li>Each user has stored locations for quick access</li>
+              <li>Search by location details or other points of reference</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Asset Management</h3>
+            <hr>
+            <ul class="h5">
+              <li>Manage each system independantly for age</li>
+              <li>Monitor contract details for out-of-service</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Lab Testing</h3>
+            <hr>
+            <ul class="h5">
+              <li>Lab testing per system</li>
+              <li>Generated Label for easy sample labeling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item img04">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Map Overview</h3>
+            <hr>
+            <ul class="h5">
+              <li>Monitor all locations in a single view</li>
+              <li>Fully interactive map to pull up details on selected location</li>
+              <li>Indicators to monitor for issues</li>
+              <li>Add notes inline to pass back inportant details</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -69,6 +69,13 @@
     top: 15vw;
     left: 15px;
     color: #fff;
+    text-shadow: 2px 1px 3px #333;
+  }
+  .profile-text.no-profile{
+    top: unset;
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
   }
 
   .profile-text h1{
@@ -102,88 +109,187 @@
       left: 0px;
       transform: translateY(50%);
     }
+    .profile-text.no-profile{
+      left: 0px;
+    }
   }
 
 /* ------------------------------------------------------------ *\
-	Hero Shot
+	Hero Section
 \* ------------------------------------------------------------ */
 
-.home-hero{
+.hero-section{
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   padding: 0;
 }
-
-.hero-text.container{
+.hero-section .hero-text.container{
   position: absolute;
   width: 100%;
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
-
-.home-hero .heroImg{
+.hero-section .hero-Image{
   display: block;
   width: 100%;
-  height: 60vh;
-  background-image: 
-    linear-gradient(140deg, var(--inverse) 20%, var(--secondary) 80%),
-    url('../images/dmitry-chernyshov-mP7aPSUm7aE-unsplash_sm.jpg');
+  height: 50vh;
   background-position: top center;
   background-size: cover;
   background-blend-mode: color;
   color: #fff;
 }
 
+/* Mobile Images - Small */
+.hero-section .hero-Image.laptop{
+  background-image: 
+    linear-gradient(140deg, var(--inverse) 20%, var(--secondary) 80%),
+    url('../images/dmitry-chernyshov-mP7aPSUm7aE-unsplash_sm.jpg');
+}
+.hero-section .hero-Image.projects{
+  background-image: 
+    linear-gradient(140deg, var(--inverse) 20%, var(--secondary) 80%),
+    url('../images/ali-yahya-9zFa3XvxFx4-unsplash_sm.jpg');
+}
+
+/* Desktop Images - Fullsize */
 @media (min-width: 768px) {
-  .home-hero .heroImg{
+  .hero-section .hero-Image.laptop{
     background-image: 
       linear-gradient(140deg, var(--inverse) 0%, var(--secondary) 90%),
       url('../images/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg');
   }
+  .hero-section .hero-Image.projects{
+    background-image: 
+      linear-gradient(140deg, var(--inverse) 0%, var(--secondary) 90%),
+      url('../images/ali-yahya-9zFa3XvxFx4-unsplash.jpg');
+  }
 }
 
 /* ------------------------------------------------------------ *\
-	Key Services
+	Notes Section
 \* ------------------------------------------------------------ */
 
-.key-services .row{
+.notes-section .row{
   margin-top: 0px;
 }
-.key-services .row > .col-12{
+.notes-section .row > .col-12{
   margin-bottom: 30px;
 }
 
-.key-services i{
+.notes-section i{
   font-size: 4rem;
   /* color: var(--inverse); */
 }
 
-.key-services h3{
+.notes-section h3{
   margin: 12px 0;
   color: var(--primary);
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-.key-services p{
+.notes-section p{
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 0 6px;
 }
 
 @media (min-width: 768px) {
-  .key-services .row{
+  .notes-section .row{
     margin-top: 60px;
   }
-  .key-services .row > .col-12{
+  .notes-section .row > .col-12{
     margin-bottom: 0px;
   }
 }
 
+/* ------------------------------------------------------------ *\
+	Carousel
+\* ------------------------------------------------------------ */
+
+.owl-carousel.screen-shot .item{
+  display: block;
+  width: 100%;
+  height: 90vw;
+  background-color: #fff;
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #222;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #bbb;
+  transform: scale(0.98);
+  overflow: hidden;
+  padding: 8px;
+}
+
+.owl-carousel.screen-shot .text-bottom-left{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.zeotec .blank{
+  background-image: linear-gradient(190deg, #fff0 70%, #fff 100%);
+}
+
+/* zeotec screens */
+.zeotec .img01{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/zeotec/zeotec_00.jpg');
+}
+
+.zeotec .img02{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/zeotec/zeotec_01.jpg');
+}
+
+.zeotec .img03{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/zeotec/zeotec_02.jpg');
+}
+
+.zeotec .img04{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/zeotec/zeotec_03.jpg');
+}
+
+@media (min-width: 576px) {
+  .owl-carousel.screen-shot .item{
+    min-height: 345px;
+  }
+}
+
+@media (min-width: 768px) {
+  .owl-carousel.screen-shot .item{
+    min-height: 576px;
+    height: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .owl-carousel.screen-shot .item{
+    min-height: 465px;
+    height: unset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .owl-carousel.screen-shot .item{
+    min-height: 555px;
+    height: unset;
+  }
+}
 
 /* ------------------------------------------------------------ *\
-	footer
+	Footer
 \* ------------------------------------------------------------ */
 
 .footer{
