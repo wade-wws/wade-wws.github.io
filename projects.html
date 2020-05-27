@@ -27,16 +27,24 @@
 
   <script>
     $(document).ready(function() {
-      $('.owl-carousel').owlCarousel({
-          items: 1,
-          loop:true,
-          margin:0,
-          nav:false,
-          autoplay:false,
-          autoplayHoverPause:true,
-          smartSpeed:800,
-          dots:true
-      })
+      var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            items: 1,
+            loop:true,
+            margin:0,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:7000,
+            autoplayHoverPause:true,
+            smartSpeed:700,
+            dots:true
+          });
+        $('.owl-NextBtn').click(function() {
+          owl.trigger('next.owl.carousel');
+        })
+        $('.owl-PrevBtn').click(function() {
+          owl.trigger('prev.owl.carousel');
+        })
     });
   </script>
 </head>
@@ -125,62 +133,38 @@
   <div class="container">
     <div class="row zeotec">
       <div class="col-12 owl-carousel screen-shot owl-theme">
+
+        <!-- features -->
         <div class="item blank">
           <div class="row justify-content-center">
             <div class="col-10 align-center">
               <br><br>
               <h1 class="clrpri bold">Zeotec</h1>
               <br><br>
-              <h4>
-                Lab testing for Chemical and Non-Chemical services
-              </h4>
+              <h4>Lab testing for Chemical and Non-Chemical services</h4>
               <br>
             </div>
-            <div class="col-10 col-md-4">
+            <div class="col-10 col-md-6 col-lg-4">
               <br><br>
-              <h3 class="clrpri bold">Key features:</h3>
+              <h3 class="clrpri bold">Key features</h3>
               <hr>
               <ul class="h5">
-                <li>Mobile access for service technitions</li>
-                <li>Asset management and contracts</li>
-                <li>Real-time lab results, fast reaction times</li>
-                <li>Integrated emailing for client approvals</li>
+                <li>Mobile access for service technicians</li>
                 <li>Map overview to quickly identify issues</li>
+                <li>Asset management and contracts</li>
+                <li>Real-time lab results, for fast reaction times</li>
+                <li>Integrated emailing for client approvals</li>
                 <li>Print, Download, and Email lab reports</li>
               </ul>
             </div>
+            <div class="text-bottom-right d-none d-md-block point">
+              <i class="fas owl-PrevBtn clrpri fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+              <i class="fas owl-NextBtn clrpri fa-4x fa-caret-right"></i>
+            </div>
           </div>
         </div>
-        <div class="item img01">
-          <div class="text-bottom-left">
-            <h3 class="clrpri bold">Search / Bookmarked</h3>
-            <hr>
-            <ul class="h5">
-              <li>Each user has stored locations for quick access</li>
-              <li>Search by location details or other points of reference</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item img02">
-          <div class="text-bottom-left">
-            <h3 class="clrpri bold">Asset Management</h3>
-            <hr>
-            <ul class="h5">
-              <li>Manage each system independantly for age</li>
-              <li>Monitor contract details for out-of-service</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item img03">
-          <div class="text-bottom-left">
-            <h3 class="clrpri bold">Lab Testing</h3>
-            <hr>
-            <ul class="h5">
-              <li>Lab testing per system</li>
-              <li>Generated Label for easy sample labeling</li>
-            </ul>
-          </div>
-        </div>
+
+        <!-- map -->
         <div class="item img04">
           <div class="text-bottom-left">
             <h3 class="clrpri bold">Map Overview</h3>
@@ -192,7 +176,60 @@
               <li>Add notes inline to pass back inportant details</li>
             </ul>
           </div>
+          <div class="text-bottom-right d-none d-md-block point">
+            <i class="fas owl-PrevBtn clrpri fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+            <i class="fas owl-NextBtn clrpri fa-4x fa-caret-right"></i>
+          </div>
         </div>
+
+        <!-- search -->
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Search / Bookmarked locations</h3>
+            <hr>
+            <ul class="h5">
+              <li>Each user has stored locations for quick access</li>
+              <li>Search by location details or other points of reference</li>
+            </ul>
+          </div>
+          <div class="text-bottom-right d-none d-md-block point">
+            <i class="fas owl-PrevBtn clrpri fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+            <i class="fas owl-NextBtn clrpri fa-4x fa-caret-right"></i>
+          </div>
+        </div>
+
+        <!-- assets -->
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Asset Management</h3>
+            <hr>
+            <ul class="h5">
+              <li>Manage each system independantly for age</li>
+              <li>Monitor contract details for out-of-service</li>
+            </ul>
+          </div>
+          <div class="text-bottom-right d-none d-md-block point">
+            <i class="fas owl-PrevBtn clrpri fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+            <i class="fas owl-NextBtn clrpri fa-4x fa-caret-right"></i>
+          </div>
+        </div>
+
+        <!-- testing -->
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Lab Testing</h3>
+            <hr>
+            <ul class="h5">
+              <li>Lab testing per system</li>
+              <li>Generated Label for easy sample labeling</li>
+            </ul>
+          </div>
+          <div class="text-bottom-right d-none d-md-block point">
+            <i class="fas owl-PrevBtn clrpri fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+            <i class="fas owl-NextBtn clrpri fa-4x fa-caret-right"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

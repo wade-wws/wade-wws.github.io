@@ -232,6 +232,12 @@
   left: 15px;
 }
 
+.owl-carousel.screen-shot .text-bottom-right{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
 .zeotec .blank{
   background-image: linear-gradient(190deg, #fff0 70%, #fff 100%);
 }
