@@ -9,7 +9,7 @@
   position: absolute;
   width: 5.25rem;
   height: 5.25rem !important;
-  background-color: var(--inverse);
+  background-color: var(--medium);
   top: 1rem;
   margin: 0 auto;
   text-align: center;

@@ -17,11 +17,12 @@
   /* hsl(165, 100%, 13%) */
   /* var(--hue) */
 
-  --hue: 264; /* Hue-Color */
-  --sat: 35%; /* Saturation-Dark/Light */
-  --primary: hsl(var(--hue), 25%, var(--sat));
-  --secondary: hsl(var(--hue), 35%, calc(var(--sat) - 10%));
-  --inverse: hsl(calc(var(--hue) + 180), 50%, var(--sat));
+  --hue: 235; /* Hue-Color */
+  --sat: 20%; /* Saturation-Dark/Light */
+  --primary: hsl(var(--hue), 35%, var(--sat));
+  --secondary: hsl(var(--hue), 45%, calc(var(--sat) - 10%));
+  --inverse: #e5e4e2; 
+  /* hsl(calc(var(--hue) + 180), 50%, var(--sat)) */
   --highlight: hsl(38, 91%, 54%);
   --pagebackground: hsl(0, 0%, 92%);
 
