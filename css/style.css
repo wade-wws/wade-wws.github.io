@@ -110,8 +110,8 @@ ul li{
 }
 
 hr{
-  border: 0px;
-  border-bottom: 1px solid var(--medium);
+  border: 2px;
+  border-bottom: 2px solid #aaa;
   margin: 2px 0;
 }
 
@@ -149,6 +149,10 @@ h1, h2, h3, h4, h5{display: inline-block; }
 
 pre{
   margin: 0.75rem 0;
+}
+.ellipsis{
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
 /* ------------------------------------------------------------ *\

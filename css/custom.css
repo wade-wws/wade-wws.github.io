@@ -226,19 +226,54 @@
   padding: 8px;
 }
 
+.owl-carousel.screen-shot .youtube-item{
+  height: 90vw;
+}
+.owl-carousel.screen-shot .owl-nav{
+  margin: 6px 0;
+}
+.owl-carousel.screen-shot .owl-nav .owl-prev, 
+.owl-carousel.screen-shot .owl-nav .owl-next{
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 17px;
+  margin: 0 10px;
+}
+.owl-carousel.screen-shot .owl-nav button span{
+  line-height: 6px;
+}
+
 .owl-carousel.screen-shot .text-bottom-left{
   position: absolute;
   bottom: 15px;
   left: 15px;
 }
-
 .owl-carousel.screen-shot .text-bottom-right{
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
 
-.zeotec .blank{
+.owl-carousel.screen-shot ul{
+  padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .owl-carousel h1{
+    font-size: 1.625rem;
+  }
+  .owl-carousel h3{
+    font-size: 1.125rem;
+  }
+  .owl-carousel h4{
+    font-size: 1.125rem;
+  }
+  .owl-carousel .h5, .owl-carousel h5{
+    font-size: 1rem;
+  }
+}
+
+.owl-carousel .blank{
   background-image: linear-gradient(190deg, #fff0 70%, #fff 100%);
 }
 
@@ -248,47 +283,161 @@
     linear-gradient(190deg, #fff0 70%, #fff 100%),
     url('../images/zeotec/zeotec_00.jpg');
 }
-
 .zeotec .img02{
   background-image: 
     linear-gradient(190deg, #fff0 70%, #fff 100%),
     url('../images/zeotec/zeotec_01.jpg');
 }
-
 .zeotec .img03{
   background-image: 
     linear-gradient(190deg, #fff0 70%, #fff 100%),
     url('../images/zeotec/zeotec_02.jpg');
 }
-
 .zeotec .img04{
   background-image: 
     linear-gradient(190deg, #fff0 70%, #fff 100%),
     url('../images/zeotec/zeotec_03.jpg');
 }
 
+/* homeotto screens */
+.homeotto .img01{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/homeotto/homeotto_app.jpg');
+}
+.homeotto .img02{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/homeotto/homeotto_01.jpg');
+}
+.homeotto .img03{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/homeotto/homeotto_02.jpg');
+}
+.homeotto .img04{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/homeotto/homeotto_03.jpg');
+}
+.homeotto .img05{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/homeotto/homeotto_04.jpg');
+}
+
+/* buildotto screens */
+.buildotto .img01{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/buildotto/buildotto_01.jpg');
+}
+.buildotto .img02{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/buildotto/buildotto_05.jpg');
+}
+.buildotto .img03{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/buildotto/buildotto_06.jpg');
+}
+.buildotto .img04{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/buildotto/buildotto_07.jpg');
+}
+.buildotto .img05{
+  background-image: 
+    linear-gradient(190deg, #fff0 70%, #fff 100%),
+    url('../images/buildotto/buildotto_08.jpg');
+}
+
+/* photogiftworld screens */
+.photogiftworld .img01{
+  background-image: 
+    linear-gradient(190deg, #fff0 15%, #fff 50%),
+    url('../images/photogiftworld/printing.jpg');
+}
+.photogiftworld .img02{
+  background-image: 
+    linear-gradient(190deg, #fff0 25%, #fff 50%),
+    url('../images/photogiftworld/monitors.jpg');
+}
+.photogiftworld .img03{
+  background-image: 
+    linear-gradient(190deg, #fff0 20%, #fff 45%),
+    url('../images/photogiftworld/laptop.jpg');
+}
+.photogiftworld .img04{
+  background-image: 
+    linear-gradient(190deg, #fff0 10%, #fff 35%),
+    url('../images/photogiftworld/desktopprinting.jpg');
+}
+.photogiftworld .img05{
+  background-image: 
+    linear-gradient(190deg, #fff0 20%, #fff 50%),
+    url('../images/photogiftworld/shipping.jpg');
+}
+
+@media (min-width: 768px) {
+  /* photogiftworld screens */
+  .photogiftworld .img01{
+    background-image: 
+      linear-gradient(190deg, #fff0 40%, #fff 80%),
+      url('../images/photogiftworld/printing.jpg');
+  }
+  .photogiftworld .img02{
+    background-image: 
+      linear-gradient(190deg, #fff0 40%, #fff 80%),
+      url('../images/photogiftworld/monitors.jpg');
+  }
+  .photogiftworld .img03{
+    background-image: 
+      linear-gradient(190deg, #fff0 40%, #fff 80%),
+      url('../images/photogiftworld/laptop.jpg');
+  }
+  .photogiftworld .img04{
+    background-image: 
+      linear-gradient(190deg, #fff0 40%, #fff 80%),
+      url('../images/photogiftworld/desktopprinting.jpg');
+  }
+  .photogiftworld .img05{
+    background-image: 
+      linear-gradient(190deg, #fff0 40%, #fff 80%),
+      url('../images/photogiftworld/shipping.jpg');
+  }
+}
+
 @media (min-width: 576px) {
-  .owl-carousel.screen-shot .item{
+  .owl-carousel.screen-shot .item, 
+  .owl-carousel.screen-shot .youtube-item{
     min-height: 345px;
   }
 }
 
 @media (min-width: 768px) {
-  .owl-carousel.screen-shot .item{
+  .owl-carousel.screen-shot .item, 
+  .owl-carousel.screen-shot .youtube-item{
     min-height: 576px;
     height: unset;
+  }
+  .owl-carousel.screen-shot .owl-nav{
+    margin: 6px 0;
   }
 }
 
 @media (min-width: 992px) {
-  .owl-carousel.screen-shot .item{
+  .owl-carousel.screen-shot .item, 
+  .owl-carousel.screen-shot .youtube-item{
     min-height: 465px;
     height: unset;
   }
 }
 
 @media (min-width: 1200px) {
-  .owl-carousel.screen-shot .item{
+  .owl-carousel.screen-shot .item, 
+  .owl-carousel.screen-shot .youtube-item{
     min-height: 555px;
     height: unset;
   }

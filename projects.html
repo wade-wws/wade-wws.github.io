@@ -37,23 +37,80 @@
 
   <script>
     $(document).ready(function() {
-      var owl = $('.owl-carousel');
+      var owl = $('.zeotec .owl-carousel');
           owl.owlCarousel({
             items: 1,
             loop:true,
             margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:7000,
+            nav:true,
+            autoplay:false,
+            // autoplayTimeout:7000,
             autoplayHoverPause:true,
             smartSpeed:700,
             dots:true
           });
-        $('.owl-NextBtn').click(function() {
+        $('.zeotec .owl-NextBtn').click(function() {
           owl.trigger('next.owl.carousel');
         })
-        $('.owl-PrevBtn').click(function() {
+        $('.zeotec .owl-PrevBtn').click(function() {
           owl.trigger('prev.owl.carousel');
+        })
+
+        var owl2 = $('.homeotto .owl-carousel');
+          owl2.owlCarousel({
+            items: 1,
+            loop:true,
+            margin:0,
+            nav:true,
+            autoplay:false,
+            // autoplayTimeout:7000,
+            autoplayHoverPause:true,
+            smartSpeed:700,
+            dots:true
+          });
+        $('.homeotto .owl-NextBtn').click(function() {
+          owl2.trigger('next.owl.carousel');
+        })
+        $('.homeotto .owl-PrevBtn').click(function() {
+          owl2.trigger('prev.owl.carousel');
+        })
+
+        var owl3 = $('.buildotto .owl-carousel');
+          owl3.owlCarousel({
+            items: 1,
+            loop:true,
+            margin:0,
+            nav:true,
+            autoplay:false,
+            // autoplayTimeout:7000,
+            autoplayHoverPause:true,
+            smartSpeed:700,
+            dots:true
+          });
+        $('.buildotto .owl-NextBtn').click(function() {
+          owl3.trigger('next.owl.carousel');
+        })
+        $('.buildotto .owl-PrevBtn').click(function() {
+          owl3.trigger('prev.owl.carousel');
+        })
+
+        var owl4 = $('.photogiftworld .owl-carousel');
+          owl4.owlCarousel({
+            items: 1,
+            loop:true,
+            margin:0,
+            nav:true,
+            autoplay:false,
+            // autoplayTimeout:7000,
+            autoplayHoverPause:true,
+            smartSpeed:700,
+            dots:true
+          });
+        $('.photogiftworld .owl-NextBtn').click(function() {
+          owl4.trigger('next.owl.carousel');
+        })
+        $('.photogiftworld .owl-PrevBtn').click(function() {
+          owl4.trigger('prev.owl.carousel');
         })
     });
   </script>
@@ -118,44 +175,59 @@
       </div>
     </div>
   </div>
-  <br><br>
+  <br class="d-block d-md-none">
+  <br class="d-block d-md-none">
 
   <!-- services -->
   <div class="container notes-section">
     <div class="row justify-content-center">
       <div class="col-12 col-md-7 align-center">
-        <h1><b class="clrpri">Projects that I have developed.</b></h1>
+        <h1><b class="clrpri">Developed Projects</b></h1>
         <br><br>
         <p>
-          Some primary examples of projects I have worked on and company that 
-          I have worked for. My works usually have a blend of combining creative
-          systems driven with data.<br>
-          <br>
+          Some primary examples of projects I have developed for companies. 
+          My works usually have a blend of combining creative
+          systems driven with data.
+          <br><br class="d-none d-md-block">
         </p>
       </div>
       <div class="col-12">
         <hr>
-        <br><br>
+        <br><br class="d-none d-md-block">
       </div>
     </div>
   </div>
 
+  
   <div class="container">
+
+    <!-- zeotec -->
     <div class="row zeotec">
+      <div class="col-12 align-center">
+        <h1 class="clrpri bold">Zeotec</h1>
+        <br>
+      </div>
       <div class="col-12 owl-carousel screen-shot owl-theme">
 
         <!-- features -->
         <div class="item blank">
           <div class="row justify-content-center">
-            <div class="col-10 align-center">
-              <br><br>
-              <h1 class="clrpri bold">Zeotec</h1>
-              <br><br>
+            <div class="col-11 align-center">
+              <br><br class="d-none d-md-block">
               <h4>Lab testing for Chemical and Non-Chemical services</h4>
               <br>
             </div>
-            <div class="col-10 col-md-6 col-lg-4">
-              <br><br>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Description</h3>
+              <hr>
+              <h5>
+                Zeotec app allows for in-the-field service technicians to 
+                login and manage ice rink chillers and equipment lab testing.
+              </h5>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
               <h3 class="clrpri bold">Key features</h3>
               <hr>
               <ul class="h5">
@@ -167,10 +239,10 @@
                 <li>Print, Download, and Email lab reports</li>
               </ul>
             </div>
-            <div class="text-bottom-right d-none d-md-block point clrmd">
+            <!-- <div class="text-bottom-right d-none d-md-block point clrmd">
               <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
               <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -186,10 +258,6 @@
               <li>Add notes inline to pass back inportant details</li>
             </ul>
           </div>
-          <div class="text-bottom-right d-none d-md-block point clrmd">
-            <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
-            <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
-          </div>
         </div>
 
         <!-- search -->
@@ -201,10 +269,6 @@
               <li>Each user has stored locations for quick access</li>
               <li>Search by location details or other points of reference</li>
             </ul>
-          </div>
-          <div class="text-bottom-right d-none d-md-block point clrmd">
-            <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
-            <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
           </div>
         </div>
 
@@ -218,10 +282,6 @@
               <li>Monitor contract details for out-of-service</li>
             </ul>
           </div>
-          <div class="text-bottom-right d-none d-md-block point clrmd">
-            <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
-            <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
-          </div>
         </div>
 
         <!-- testing -->
@@ -234,44 +294,401 @@
               <li>Generated Label for easy sample labeling</li>
             </ul>
           </div>
-          <div class="text-bottom-right d-none d-md-block point clrmd">
-            <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
-            <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
+        </div>
+
+        <!-- video -->
+        <div class="item">
+          <iframe width="100%" height="auto" class="youtube-item" src="https://www.youtube.com/embed/wB2c-Cwb2ZA" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+    <!-- zeotec end -->
+
+    <!-- home otto -->
+    <div class="row homeotto">
+      <div class="col-12 align-center">
+        <br><br><hr>
+        <br><br>
+        <h1 class="clrpri bold">Home Otto</h1>
+        <br>
+      </div>
+      <div class="col-12 owl-carousel screen-shot owl-theme">
+
+        <!-- features -->
+        <div class="item blank">
+          <div class="row justify-content-center">
+            <div class="col-11 align-center">
+              <br><br class="d-none d-md-block">
+              <h4>A complete end-to-end home automation bundle for new home owners.</h4>
+              <br>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Description</h3>
+              <hr>
+              <h5>
+                Home Otto is a a complete package of home automation products for builders to 
+                pre-install into new home builds.
+              </h5>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Key features</h3>
+              <hr>
+              <ul class="h5">
+                <li>Mobile app for home owners with thier new home</li>
+                <li>Just one account for all your automation devices</li>
+                <li>Zero setup, ready to use minute one</li>
+                <li>Uses geofences to know when your home or away</li>
+                <li>Set anything with you voice with Amazon Alexa</li>
+                <li>Real-time changes, no delays</li>
+                <li>Built for iOS, Android, and Amazon Alexa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apps -->
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Mobile / Voice app</h3>
+            <hr>
+            <ul class="h5">
+              <li>Available on iOS, Android, and Amazon Alexa</li>
+              <li>Hybrid app that updates without new store releases</li>
+              <li>Real-time changes from app to home</li>
+              <li>Inegration with location and notification services </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Marketing site</h3>
+            <hr>
+            <ul class="h5">
+              <li>Full details for new home owners to learn from</li>
+              <li>Builder are redirected to Build Otto for those looking for automation solutions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">App Tour</h3>
+            <hr>
+            <ul class="h5">
+              <li>A guided tour of the app and its features</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div class="item img04">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Product Pages</h3>
+            <hr>
+            <ul class="h5">
+              <li>Short video guide on each of peice of hardware</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="item img05">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Self-managed security</h3>
+            <hr>
+            <ul class="h5">
+              <li>No monthly fees, all self-managed home security</li>
+              <li>Mobile location services identifies when no one is home and automatically locks the home</li>
+            </ul>
           </div>
         </div>
 
       </div>
     </div>
+    <!-- homeotto end -->
+
+    <!-- build otto -->
+    <div class="row buildotto">
+      <div class="col-12 align-center">
+        <br><br><hr>
+        <br><br>
+        <h1 class="clrpri bold">Build Otto</h1>
+        <br>
+      </div>
+      <div class="col-12 owl-carousel screen-shot owl-theme">
+
+        <!-- features -->
+        <div class="item blank">
+          <div class="row justify-content-center">
+            <div class="col-11 align-center">
+              <br><br class="d-none d-md-block">
+              <h4>
+                A back-end service to process builder blueprint into 
+                home automation bundle for quoting to clients
+              </h4>
+              <br>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Description</h3>
+              <hr>
+              <h5>
+                Build Otto allows for builders to login and upload thier buildprints
+                to have them processed into bundles for quoting back to their clients. 
+              </h5>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Key features</h3>
+              <hr>
+              <ul class="h5">
+                <li>Uses buildprints to plan and quote a home automation system bundle</li>
+                <li>Creates quotes from blueprints for customization and then for ordering</li>
+                <li class="d-none d-md-block">Orders are converted over to home otto sites and hardware is pre-programmed</li>
+                <li>Custom Designed system for reading and processing buildprints</li>
+                <li class="d-none d-md-block">Administrative account management</li>
+                <li>Integrated with Stripe for payment processing</li>
+                <li class="d-none d-md-block">Integrated with Slack for customer relations, and system processing</li>
+                <li>Many other proprietary systems for a full end-to-end solution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apps -->
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Quotes, Orders, and Blueprints</h3>
+            <hr>
+            <ul class="h5">
+              <li>Easily manages client quotes and orders per account</li>
+              <li>Uploads blueprint documents with AWS S3 storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Custom Home automation quoting interface</h3>
+            <hr>
+            <ul class="h5">
+              <li>Add Floors, Rooms, Lights, and other hardware in a custom designed interface</li>
+              <li>Guided process to completion or a fast one-click quoting</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Blueprint system viewer</h3>
+            <hr>
+            <ul class="h5">
+              <li>Full blueprint viewer in a custom web based system</li>
+              <li>Zoom in and view each floor and rooms details</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div class="item img04">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Quote and order cart</h3>
+            <hr>
+            <ul class="h5">
+              <li>Quoting and Ordering cart to process into shipped bundle</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="item img05">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Custom blueprint editor</h3>
+            <hr>
+            <ul class="h5">
+              <li>Web based CAD like system to draw out and connect </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- video -->
+        <div class="item">
+          <iframe width="100%" height="auto" class="youtube-item" src="https://www.youtube.com/embed/43hx8f6jSTk" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+    <!-- buildotto end -->
+
+    <!-- PGW -->
+    <div class="row photogiftworld">
+      <div class="col-12 align-center">
+        <br><br><hr>
+        <br><br>
+        <h1 class="clrpri bold">Photo Gift World [PGW]</h1>
+        <br>
+      </div>
+      <div class="col-12 owl-carousel screen-shot owl-theme">
+
+        <!-- features -->
+        <div class="item blank">
+          <div class="row justify-content-center">
+            <div class="col-10 align-center">
+              <br><br class="d-none d-md-block">
+              <h4>
+                Photo Gift World [Closed] was a manufacture that produced custom photo gifts
+              </h4>
+              <br>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Description</h3>
+              <hr>
+              <h5>
+                For over 10 years I worked at PGW developing the software that managed the many aspects
+                of the gifting process, all the way thru to the customer.
+              </h5>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Key features</h3>
+              <hr>
+              <ul class="h5">
+                <li>Automated printing of 1000's of orders per day to numerous printers</li>
+                <li>Itemsdue were monitors placed thru-out the facility listing the states of orders per department</li>
+                <li class="d-none d-md-block">Barcode tracking of orders thru each stage of production</li>
+                <li class="d-none d-md-block">500+ retail location shipping with packing slips, and ship to home orders across Canada and US</li>
+                <li>Customer Service web portal allowing retailers to login and view thier orders and status</li>
+                <li>Full Waybill tracking and monitoring for delivery and in-store closing of waybills</li>
+                <li>In-Store automated printing and manufactuing in a mini-lab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- printing -->
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Automated Printing</h3>
+            <hr>
+            <ul class="h5">
+              <li>10,000's of orders were delivered daily, and using a custom plugin for CorelDraw they were automatically sent to print</li>
+              <li>Prints to Inkjet printers for Mugs, Calendars were printed on Large Xerox printer, canvas prints, laser engravers...</li>
+              <li>Photos were imported into a template and could include seasonal graphic designs</li>
+              <li>Peak time was during Chrismas with 18,000 orders in one day ove 120gig at 160,000 photo's</li>
+              <li>The entire systems was data driven, orders were processed into a database and sent to print in-order of recieved</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- tracking -->
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Itemsdue</h3>
+            <hr>
+            <ul class="h5">
+              <li>Do to the shear volume of orders, being able to internally identify any orders not moving was key</li>
+              <li>Orders were split into 13 different departments and each had their own monitor and order list</li>
+              <li>Orders were color coded on screen if their were issues, and grayscale coded if they hadn't seen any movement at all</li>
+              <li>They were all seperated by process either in printing, production, in shipping, and dropped off when shipped</li>
+              <li>A seperate system was built to monitor the bulk shippmemts being sent to the retailers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CS site -->
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Customer Support Site</h3>
+            <hr>
+            <ul class="h5">
+              <li>We learned early on that transparency was key, providing a web portal to track the retailer own orders</li>
+              <li>Full tracking thru the entire process from manufacturing, shipping to who signed for package at the store</li>
+              <li>A single location may of only had a couple hundered orders but we processed them all 
+                so barcoding tracking made it easier to identify issues</li>
+              <li>Once we add this and trained the stores our call volume dropped nearly 90%</li>
+              <li>We eventually added a customer tracking portal as well that allowed customer to monitor their own orders as well</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 1hr -->
+        <div class="item img04">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Retail - 1hr Photo gifts</h3>
+            <hr>
+            <ul class="h5">
+              <li>We had a call to action from one of our major retails to bring value to their own labs</li>
+              <li>Most retails had only done in-house photo printing and wanted to make small gift item in-store in 1hr</li>
+              <li>I was able to refactor our CorelDraw plugin to communicate via an internal API and pull down thier own select orders.</li>
+              <li>We installed a basic computer and printer in 400+ retail locations, and automatically printed order ready to make in minutes</li>
+              <li>We topped out at 18,000 mugs in 1 day, 400 locations, 3 days before Chrismas all made within 1-2 hours of dropping while customers shopped</li>
+              <li>This had the added benifit of pre-shipping our heaviest item a 1/2 lbs ceramic mug to the stores, saving on weight and break-age</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Shipping -->
+        <div class="item img05">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Shipping - Web Scraping</h3>
+            <hr>
+            <ul class="h5">
+              <li>2007 we had issue where DHL said they had delivered a shippment when in reality they didn't</li>
+              <li>At the time they didnt have an API so i built a web scrapper that once an hour would pull all our waybills </li>
+              <li>From that we discovered nearly 65% of our shippments were 2-3 days late, some even 5+ days late</li>
+              <li>We moved to UPS the following year, where for the next 4 years we were the #2 shipping in Canada nearly 4 tons a day</li>
+              <li>We learned that year that A-Z was the only way to operate, verify everything, trust that anyhting in the chain can or will break</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- buildotto end -->
+
   </div>
 
-  <!-- footer -->
-  <div class="container-fluid footer">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <br>
-          <h3>Wade Smith</h3><br>
-          <h4>Business Solutions Developer</h4>
-          <br><br>
-        </div>
-        <div class="col-12 col-md-6 align-right">
-          <br>
-          <h1>
-            <a href="https://twitter.com/messages/compose?recipient_id=1250768309617782786">
-              <i class="fab fa-twitter"></i>
-            </a>&nbsp;
-            <a href="https://m.me/w4smith">
-              <i class="fab fa-facebook-messenger"></i>
-            </a>&nbsp;
-            <a href="https://www.facebook.com/w4smith/">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </h1>
-          <br><br>
+    <!-- footer -->
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <br>
+            <h3>Wade Smith</h3><br>
+            <h4>Business Solutions Developer</h4>
+            <br><br>
+          </div>
+          <div class="col-12 col-md-6 align-right">
+            <br>
+            <h1>
+              <a href="https://twitter.com/messages/compose?recipient_id=1250768309617782786">
+                <i class="fab fa-twitter"></i>
+              </a>&nbsp;
+              <a href="https://m.me/w4smith">
+                <i class="fab fa-facebook-messenger"></i>
+              </a>&nbsp;
+              <a href="https://www.facebook.com/w4smith/">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </h1>
+            <br><br>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 </html>
