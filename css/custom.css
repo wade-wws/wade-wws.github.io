@@ -129,6 +129,7 @@
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
+  padding: 0;
 }
 .hero-section .hero-Image{
   display: block;
@@ -138,6 +139,21 @@
   background-size: cover;
   background-blend-mode: color;
   color: #fff;
+}
+
+.hero-section.smVer{
+  height: 20vh;
+}
+.hero-section.smVer .hero-Image{
+  height: 20vh;
+}
+.hero-section.smVer .profile-text{
+  left: unset;
+  right: unset;
+  width: 100%;
+}
+.hero-section.smVer .profile-text h1{
+  font-weight: 500;
 }
 
 /* Mobile Images - Small */
@@ -150,6 +166,12 @@
   background-image: 
     linear-gradient(140deg, var(--inverse) 20%, var(--secondary) 80%),
     url('../images/ali-yahya-9zFa3XvxFx4-unsplash_sm.jpg');
+}
+.hero-section .hero-Image.portfolio{
+  background-position: top 30% center;
+  background-image: 
+    linear-gradient(140deg, var(--inverse) 20%, var(--secondary) 80%),
+    url('../images/luca-bravo-9l_326FISzk-unsplash_sm.jpg');
 }
 
 /* Desktop Images - Fullsize */
@@ -164,7 +186,39 @@
       linear-gradient(140deg, var(--inverse) 0%, var(--secondary) 90%),
       url('../images/ali-yahya-9zFa3XvxFx4-unsplash.jpg');
   }
+  .hero-section .hero-Image.portfolio{
+    background-position: top 30% center;
+    background-image: 
+      linear-gradient(140deg, var(--inverse) 0%, var(--secondary) 90%),
+      url('../images/luca-bravo-9l_326FISzk-unsplash.jpg');
+  }
 }
+
+.hero-section.zeotec .hero-Image{
+  background-position: top 22% center;
+  background-image: 
+    linear-gradient(190deg, #008c99 30%, #fff 100%),
+    url('../images/sergey-pesterev-FRMtK1yfFsY-unsplash.jpg');
+}
+.hero-section.homeotto .hero-Image{
+  background-position: top 60% center;
+  background-image: 
+    linear-gradient(190deg, #d86931 30%, #fff 100%),
+    url('../images/johannes-plenio-voQ97kezCx0-unsplash.jpg');
+}
+.hero-section.buildotto .hero-Image{
+  background-position: top 40% center;
+  background-image: 
+    linear-gradient(190deg, #3b4467 30%, #fff 100%),
+    url('../images/sven-mieke-fteR0e2BzKo-unsplash_sm.jpg');
+}
+.hero-section.pgw .hero-Image{
+  background-position: top 22% center;
+  background-image: 
+    linear-gradient(190deg, #555 30%, #fff 100%),
+    url('../images/mel-poole-qVg2lhK4sVY-unsplash.jpg');
+}
+
 
 /* ------------------------------------------------------------ *\
 	Notes Section
@@ -203,6 +257,75 @@
     margin-bottom: 0px;
   }
 }
+
+/* ------------------------------------------------------------ *\
+	Porfolio grid
+\* ------------------------------------------------------------ */
+
+.porfolio-grid a{
+  display: block;
+  height: 16rem;
+  line-height: 16rem;
+  margin: 15px 0;
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #bbb;
+  text-shadow: 2px 1px 2px #111;
+  overflow: hidden;
+  z-index:5;
+  position: relative;
+}
+
+.porfolio-grid a:before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  transition: 0.25s ease-in-out;
+  z-index:-1 ;
+}
+.porfolio-grid a:hover:before{
+  background-size: 100%;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+.porfolio-grid a.zeotec:before{
+  color: #fff;
+  background-image: 
+    linear-gradient(190deg, #008c99 30%, #fff 100%),
+    url('../images/sergey-pesterev-FRMtK1yfFsY-unsplash.jpg');
+}
+.porfolio-grid a.homeotto:before{
+  background-image: 
+    linear-gradient(190deg, #d86931 30%, #fff 100%),
+    url('../images/johannes-plenio-voQ97kezCx0-unsplash.jpg');
+}
+.porfolio-grid a.buildotto:before{
+  color: #fff;
+  background-image: 
+    linear-gradient(190deg, #3b4467 30%, #fff 100%),
+    url('../images/sven-mieke-fteR0e2BzKo-unsplash_sm.jpg');
+}
+.porfolio-grid a.pgw:before{
+  color: #fff;
+  background-image: 
+    linear-gradient(190deg, #555 30%, #fff 100%),
+    url('../images/mel-poole-qVg2lhK4sVY-unsplash.jpg');
+}
+
 
 /* ------------------------------------------------------------ *\
 	Carousel
@@ -447,7 +570,30 @@
 	Footer
 \* ------------------------------------------------------------ */
 
+.calltoaction{
+  margin: 4rem 0 0 0;
+  padding: 0 20px;
+  color: #fff;
+  text-shadow: 1px 2px 3px #333;
+  background-position: top 70% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  background-image: 
+  linear-gradient(90deg, var(--inverse) 20%, var(--secondary) 80%),
+  url('../images/felipe-mosquera-X2KnIO-4IiU-unsplash_sm.jpg');
+}
+
+@media (min-width: 768px) {
+  .calltoaction{
+    background-image: 
+    linear-gradient(90deg, var(--inverse) 20%, var(--secondary) 80%),
+    url('../images/felipe-mosquera-X2KnIO-4IiU-unsplash.jpg');
+  }
+}
+
 .footer{
+  margin: 0px;
   background-color: var(--primary);
   min-height: 6rem;
   color: #fff;

@@ -10,9 +10,14 @@
   <link rel="stylesheet" href="css/bootstrap-lite.css">
   <link rel="stylesheet" href="css/style.css?v=1">
   <link rel="stylesheet" href="css/header.css?v=1">
-  <link rel="stylesheet" href="css/card.css?v=1.css">
+  <link rel="stylesheet" href="css/card?v=1.css">
   <link rel="stylesheet" href="css/custom.css?v=1">
   <link rel="stylesheet" href="css/fontawesome.all.min.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <script src="js/owl.carousel.min.js"></script>
+  
   <script src="js/header.js" defer></script>
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="shortcut icon" href="images/me_Oct2019_SqSmGry.jpg?v=1" type="image/jpg" sizes="16x16 32x32 64x64">
@@ -23,10 +28,38 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@wade_yeg" />
   <meta property=”og:type” content=”website” />
-  <meta property="og:url" content="https://wade-wws.github.io/index.html" />
+  <meta property="og:url" content="https://wade-wws.github.io/projects.html" />
   <meta property="og:title"  content="Wade Smith - Business Solutions Developer" />
   <meta property="og:description" content="Creative solutions to your most difficult problems." />
-  <meta property="og:image" content="https://wade-wws.github.io/images/HomeScreen_OG.jpg" />
+  <meta property="og:image" content="https://wade-wws.github.io/images/HomeScreen_OG.jpg" /> 
+  <!-- 1.91:1
+  1200x627
+  1200x628
+    https://wade-wws.github.io/index.html
+-->
+
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            items: 1,
+            loop:true,
+            margin:0,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:8000,
+            autoplayHoverPause:true,
+            smartSpeed:700,
+            dots:true
+          });
+        $('.owl-NextBtn').click(function() {
+          owl.trigger('next.owl.carousel');
+        })
+        $('.owl-PrevBtn').click(function() {
+          owl.trigger('prev.owl.carousel');
+        })
+    });
+  </script>
 </head>
 <body>
   
@@ -50,7 +83,7 @@
             </div>
           </div>
           <ul class="nav">
-            <li class="navitem active">
+            <li class="navitem">
               <a title="home" href="index.html">
                 <i class="fas icon fa-home"></i>
                 <label for="">Home</label>
@@ -83,107 +116,126 @@
 
   <!-- hero section -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 hero-section">
-        <div class="hero-Text container">
-          <div class="profile-img circle"></div>
+    <div class="row justify-content-center">
+      <div class="col-12 hero-section zeotec smVer">
+        <div class="hero-Text clrwht container align-center">
           <div class="profile-text">
-            <h1>
-              Hi, I'm<br>
-              Wade Smith
-            </h1><br>
-            <h3>Business Solutions Developer</h3>
+            <h1>Zeotec</h1>
           </div>
         </div>
-        <div class="hero-Image laptop"></div>
+        <div class="hero-Image portfolio"></div>
       </div>
     </div>
   </div>
-  <br><br>
 
-  <!-- services -->
-  <div class="container notes-section">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-tag"></i><br>
-        <h3>Branding</h3><br>
-        <p>
-          Marketing sites to establish and sell your brand; 
-          leveraging tools such as video, streaming, and chat.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-cogs"></i><br>
-        <h3>Application</h3><br>
-        <p>
-          Develop mobile and web apps using data driven architecture,
-          and fast deployments with hot code push.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-sitemap"></i><br>
-        <h3>Infrastruction</h3><br>
-        <p>
-          Integration of modern platforms and APIs into your new or existing ecosystem.
-        </p>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-magic"></i><br>
-        <h3>Automation</h3><br>
-        <p>
-          Translate your operations into business logic to automate repeative tasks
-          and grow your business.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="far fa-eye"></i><br>
-        <h3>Transparency</h3><br>
-        <p>
-          Give your clients a view into your company and allow them to track their own orders.
-        </p>
-      </div>
-      <div class="col-12 col-md-3 align-center">
-        <i class="fas fa-pencil-ruler"></i><br>
-        <h3>Visuals</h3><br>
-        <p>
-          Develop custom imaging systems to present your products and services in full detail.
-        </p>
-      </div>
-    </div>
-
-  </div>
-  <br><br>
-
-
-  <!-- services -->
   <div class="container">
-    <div class="col-12 align-center">
-      <br><br><br class="d-none d-md-block">
-      <h1 class="clrpri bold">Portfolio</h1>
-      <br><br><hr><br>
+    <!-- zeotec -->
+    <div class="row zeotec">
+      <div class="col-12 align-center">
+        <br><br><br class="d-none d-md-block">
+        <h1 class="clrpri bold">Highlights</h1>
+        <br><br><hr><br>
+      </div>
+      <div class="col-12 owl-carousel screen-shot owl-theme">
+
+        <!-- features -->
+        <div class="item blank">
+          <div class="row justify-content-center">
+            <div class="col-11 align-center">
+              <br><br class="d-none d-md-block">
+              <h4>Lab testing for Chemical and Non-Chemical services</h4>
+              <br>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Description</h3>
+              <hr>
+              <h5>
+                Zeotec app allows for in-the-field service technicians to 
+                login and manage ice rink chillers and equipment lab testing.
+              </h5>
+            </div>
+            <div class="col-11 col-md-8 col-lg-4">
+              <br><br class="d-none d-md-block">
+              <h3 class="clrpri bold">Key features</h3>
+              <hr>
+              <ul class="h5">
+                <li>Mobile access for service technicians</li>
+                <li>Map overview to quickly identify issues</li>
+                <li>Asset management and contracts</li>
+                <li>Real-time lab results, for fast reaction times</li>
+                <li>Integrated emailing for client approvals</li>
+                <li>Print, Download, and Email lab reports</li>
+              </ul>
+            </div>
+            <!-- <div class="text-bottom-right d-none d-md-block point clrmd">
+              <i class="fas owl-PrevBtn fa-4x fa-caret-left"></i> &nbsp; &nbsp;
+              <i class="fas owl-NextBtn fa-4x fa-caret-right"></i>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- map -->
+        <div class="item img04">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Map Overview</h3>
+            <hr>
+            <ul class="h5">
+              <li>Monitor all locations in a single view</li>
+              <li>Fully interactive map to pull up details on selected location</li>
+              <li>Indicators to monitor for issues</li>
+              <li>Add notes inline to pass back inportant details</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div class="item img01">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Search / Bookmarked locations</h3>
+            <hr>
+            <ul class="h5">
+              <li>Each user has stored locations for quick access</li>
+              <li>Search by location details or other points of reference</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- assets -->
+        <div class="item img02">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Asset Management</h3>
+            <hr>
+            <ul class="h5">
+              <li>Manage each system independantly for age</li>
+              <li>Monitor contract details for out-of-service</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- testing -->
+        <div class="item img03">
+          <div class="text-bottom-left">
+            <h3 class="clrpri bold">Lab Testing</h3>
+            <hr>
+            <ul class="h5">
+              <li>Lab testing per system</li>
+              <li>Generated Label for easy sample labeling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- video -->
+        <div class="item">
+          <iframe width="100%" height="auto" class="youtube-item" src="https://www.youtube.com/embed/wB2c-Cwb2ZA" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
     </div>
-    <div class="row justify-content-center porfolio-grid">
+    <!-- zeotec end -->
 
-      <div class="col-12 col-md-4 align-center">
-        <a class="zeotec" href="zeotec.html">Zeotec</a>
-      </div>
-
-      <div class="col-12 col-md-4 align-center">
-        <a class="homeotto" href="homeotto.html">Home Otto</a>
-      </div>
-
-      <div class="col-12 col-md-4 align-center">
-        <a class="buildotto" href="buildotto.html">Build Otto</a>
-      </div>
-
-      <div class="col-12 col-md-4 align-center">
-        <a class="pgw" href="pgw.html">Photo Gift World</a>
-      </div>
-
-    </div>
   </div>
 
   <!-- footer -->

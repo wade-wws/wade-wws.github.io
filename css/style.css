@@ -44,8 +44,8 @@
   --navlineht: 3rem;
 
   /* buttons */
-  --btnradius: 4px;
-  --btnpadding: 0 1.25rem;
+  --btnradius: 99px;
+  --btnpadding: 0 2rem;
 
   /* Cards */
   --cardbg: hsl(0, 0%, 100%);
@@ -383,7 +383,7 @@ div[sort]{ cursor: pointer; }
 	##### Media Size Changes ######
 \* ------------------------------------------------------------ */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   :root{
     --fontsize: 12px;
   }
@@ -405,4 +405,4 @@ div[sort]{ cursor: pointer; }
   :root{
     --fontsize: 12px;
   }
-}
+} */

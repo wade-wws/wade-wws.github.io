@@ -82,9 +82,9 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
   /* border: 1px solid transparent; */
   border-width: 0;
   padding: var(--btnpadding);
-  font-size: 1rem;
+  font-size: 1.125rem;
   height: 2rem;
-  line-height: 2;
+  line-height: 2rem;
   background-color: transparent;
   border-radius: var(--btnradius);
   transition:

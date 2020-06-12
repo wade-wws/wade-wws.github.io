@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap-lite.css">
   <link rel="stylesheet" href="css/style.css?v=1">
   <link rel="stylesheet" href="css/header.css?v=1">
   <link rel="stylesheet" href="css/card?v=1.css">
@@ -145,11 +146,18 @@
                 <label for="">Home</label>
               </a>
             </li>
-            <li class="navitem active">
-              <a title="projects" href="projects.html">
-                <i class="fas icon fa-home"></i>
-                <label for="">Projects</label>
+            <li class="navitem dropdown">
+              <a class="dropdown-toggle">
+                <i class="fas icon fa-cog"></i>
+                <label for="">Portfolio</label>
+                <i class="fas fa-angle-down"></i>
               </a>
+              <ul class="dropdown-nav">
+                <li><a title="zeotec" href="zeotec.html">Zeotec</a></li>
+                <li><a title="home otto" href="homeotto.html">Home Otto</a></li>
+                <li><a title="build otto" href="buildotto.html">Build Otto</a></li>
+                <li><a title="photo gift world" href="pgw.html">PGW</a></li>
+              </ul>
             </li>
           </ul>
           <div class="nav_collapse evt-expandNav d-md-none">
@@ -324,7 +332,7 @@
           <div class="row justify-content-center">
             <div class="col-11 align-center">
               <br><br class="d-none d-md-block">
-              <h4>A complete end-to-end home automation bundle for new home owners.</h4>
+              <h4>A complete end-to-end home automation kit for new home owners.</h4>
               <br>
             </div>
             <div class="col-11 col-md-8 col-lg-4">
@@ -663,34 +671,57 @@
 
   </div>
 
-    <!-- footer -->
-    <div class="container-fluid footer">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <br>
-            <h3>Wade Smith</h3><br>
-            <h4>Business Solutions Developer</h4>
-            <br><br>
-          </div>
-          <div class="col-12 col-md-6 align-right">
-            <br>
-            <h1>
-              <a href="https://twitter.com/messages/compose?recipient_id=1250768309617782786">
-                <i class="fab fa-twitter"></i>
-              </a>&nbsp;
-              <a href="https://m.me/w4smith">
-                <i class="fab fa-facebook-messenger"></i>
-              </a>&nbsp;
-              <a href="https://www.facebook.com/w4smith/">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </h1>
-            <br><br>
-          </div>
+  <!-- footer -->
+  <div class="container-fluid calltoaction">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 align-center">
+        <br><br>
+        <h1><b>Let get to work.</b></h1>
+        <br><br>
+        <h5>
+          Working with people to plan out a strategy to deliver the tools and
+          systems needed to keep up with the modern times, and driving business forward.
+          <br><br>
+        </h5>
+        <br><br>
+        <a href="mailto:wade.wws@gmail.com">
+          <div class="btn btn-primary">Email me</div>
+        </a><br>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <br>
+          <h3>Wade Smith</h3><br>
+          <h4>Business Solutions Developer</h4>
+          <br><br>
+        </div>
+        <div class="col-12 col-md-6 align-right">
+          <br>
+          <h1>
+            <a href="mailto:wade.wws@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>&nbsp;
+            <a href="https://twitter.com/messages/compose?recipient_id=1250768309617782786">
+              <i class="fab fa-twitter"></i>
+            </a>&nbsp;
+            <a href="https://m.me/w4smith">
+              <i class="fab fa-facebook-messenger"></i>
+            </a>&nbsp;
+            <a href="https://www.facebook.com/w4smith/">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </h1>
+          <br><br>
         </div>
       </div>
     </div>
+  </div>
 
 </body>
 </html>

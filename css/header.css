@@ -5,7 +5,7 @@
 
 .header{
   height: var(--headHei);
-  width: 100%;
+  width: 100vw;
   line-height: var(--headHei);
   margin-top: var(--topMargin);
   position: fixed;
