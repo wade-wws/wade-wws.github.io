@@ -159,6 +159,7 @@
   -moz-border-radius: 0 var(--sidenavrad) var(--sidenavrad) 0;
   border-radius: 0 var(--sidenavrad) var(--sidenavrad) 0;
   -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   left:0;
 }
 .header.expand.sidenav.left .navbar{
@@ -176,6 +177,7 @@
   -moz-border-radius: var(--sidenavrad) 0 0 var(--sidenavrad);
   border-radius: var(--sidenavrad) 0 0 var(--sidenavrad);
   -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   right:0;
 }
 .header.expand.sidenav.right .navbar{
